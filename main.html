@@ -12,19 +12,102 @@
         <script type="text/javascript" src="./mobile-res_files/login.js"></script>
     </head>
     <body class="">
-        <div class="wrap">
-
-
-            <!---accout-login----->
-            <div class="various-grid accout-login">
-                <div class="tooltips-top-row">
-
-                    <ul class="artical-related-info-row-right">
-                            <li><a class="author" href="/#">make notes</a></li>
-                            <li><a class="articl-readmore" href="main.html">read notes</a></li>
-                        </ul>
-                </div>	
+       <div class="wrap">
+           <!--  -responsive-icon--
+            <div id="mobile-header">
+                <a id="responsive-menu-button" href="#sidr-main"><img src="./mobile-res_files/nav-icon.png" alt=""></a>
+            </div>-->
+            <div class="clear"> </div>
+            <!--search---->
+            <div class="input-box-grid-dark-search2">
+                <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search'; }"><input type="submit" value="">
             </div>
+            <div class="clear"> </div>
+            <!--nav bar---->
+            <div id="navigation">
+
+                <nav class="nav frist-top-nav">
+                    <ul>
+                        <li><a href="/#"><span class="photo-icon"> </span>stats</a></li>
+                        <li><a class="mess" href="/#"><span class="mess-icon1"> </span>Message<label>3</label></a></li>
+                        <li><a href="/#"><span class="bref-icon1"> </span>My work</a></li>
+                    </ul>
+                </nav>
+                <div class="top-nav-right">
+                    <div class="profile_details">
+                        <div id="loginContainer">
+                            <a id="loginButton" class=""><span>Me</span></a>   
+                            <div id="loginBox" style="display: none;">                
+                                <form id="loginForm">
+                                    <fieldset id="body">
+                                        <div class="user-info">
+                                            <h4>Hello,<a href="/#"> Username</a></h4>
+                                            <ul>
+                                                <li class="profile active"><a href="/#">Profile </a></li>
+                                                <li class="logout"><a href="/#"> Logout</a></li>
+                                                <div class="clear"></div>		
+                                            </ul>
+                                        </div>			                            
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="menu sub-menu profile_img">
+                            <li><a class="active-icon c1" href="/#"> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href=""><img src="./mobile-res_files/supr.png" alt="">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./mobile-res_files/start.png" alt="">Favourites</a>
+                                    </li>
+
+                                    <li>
+                                        <a href=""><img src="./mobile-res_files/gar.png" alt="">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./mobile-res_files/logout.png" alt="">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>	
+                        <div class="clear"> </div>		  	
+                    </div>
+                </div>
+                <div class="clear"> </div>		  	
+            </div>
+            <div class="clear"></div>
+            <script>
+                        $('#responsive-menu-button').sidr({
+                name: 'sidr-main',
+                        source: '#navigation'
+                });</script>
+            
+            <div class="clear"></div>
+            <!---main snapnote content----->
+            <div class="various-grids-right">
+                <div class="various-grids-right-grid">
+                    <a href="/#">2 AUGUST, 2013</a>
+                    <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor adipisicing elit</p>
+                </div>
+            </div>
+            <div class="various-grids-right">
+                <div class="various-grids-right-grid">
+                    <a href="/#">2 AUGUST, 2013</a>
+                    <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor adipisicing elit</p>
+                </div>
+            </div>
+            <div class="various-grids-right">
+                <div class="various-grids-right-grid">
+                    <a href="/#">2 AUGUST, 2013</a>
+                    <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor adipisicing elit</p>
+                </div>
+            </div>
+
+
+
+
+
 
             <div class="copy-tight">
                 <p>Snapnote by <a href="http://w3layouts.com/">mishxpie</a></p>
